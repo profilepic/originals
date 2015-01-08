@@ -11,6 +11,8 @@ require 'logutils'
 # our own code
 
 require 'feedfilter/version'  # let it always go first
+require 'feedfilter/ads'
+
 
 
 # say hello

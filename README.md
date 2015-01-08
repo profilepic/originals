@@ -2,16 +2,74 @@
 
 * home  :: [github.com/feedreader/feed.filter](https://github.com/feedreader/feed.filter)
 * bugs  :: [github.com/feedreader/feed.filter/issues](https://github.com/feedreader/feed.filter/issues)
-* gem   :: [rubygems.org/gems/feed-filter](https://rubygems.org/gems/feed-filter)
-* rdoc  :: [rubydoc.info/gems/feed-filter](http://rubydoc.info/gems/feed-filter)
+* gem   :: [rubygems.org/gems/feedfilter](https://rubygems.org/gems/feedfilter)
+* rdoc  :: [rubydoc.info/gems/feedfilter](http://rubydoc.info/gems/feedfilter)
 * forum :: [groups.google.com/group/feedreader](http://groups.google.com/group/feedreader)
 
 
 
 ## Usage
 
-To be done
 
+### `strip_ads`  in `AdsFilter` module
+
+~~~
+require 'feedfilter'
+
+include FeedFilter::AdsFilter      # lets us use strip_ads
+
+
+before_snippet =<<EOS
+<div class="feedflare">
+ <a href="http://feeds.feedburner.com/~ff/Rubyflow?a=1wUDnBztAJY:fzqBvTOGB9M:3H-1DwQop_U">
+   <img src="http://feeds.feedburner.com/~ff/Rubyflow?i=1wUDnBztAJY:fzqBvTOGB9M:3H-1DwQop_U" border="0"></img>
+ </a>
+</div>
+EOS
+
+
+snippet = strip_ads( before_snippet )
+
+puts snippet
+~~~
+
+
+### Use Text Patterns (Regex) for Filters
+
+Ads Example:
+
+~~~
+FEEDFLARE_ADS = %r{
+     <div[^>]*?
+        class=("|')feedflare\1
+        [^>]*?>
+          .*?
+     <\/div>
+       }mix
+
+FEEDBURNER_BUGS = %r{
+      <img[^>]*?
+         src=("|')(:?http:)?//feeds\.feedburner\.com/~r/[^>]+?\1
+         .*?>
+       }mix
+
+...
+~~~
+
+or as one-liners (if you prefer)
+
+~~~
+FEEDFLARE_ADS   = %r{<div[^>]*?class=("|')feedflare\1[^>]*?>.*?<\/div>}mi
+FEEDBURNER_BUGS = %r{<img[^>]*?src=("|')(:?http:)?//feeds\.feedburner\.com/~r/[^>]+?\1.*?>}mi
+...
+~~~
+
+
+## Alternatives
+
+Node.js
+
+- [node-resanitize](https://github.com/danmactough/node-resanitize)
 
 
 ## License
