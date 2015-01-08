@@ -2,11 +2,5 @@ HISTORY.md
 Manifest.txt
 README.md
 Rakefile
-lib/pluto/filter.rb
-lib/pluto/tasks/environment.rake
-lib/pluto/tasks/setup.rake
-lib/pluto/tasks/stats.rake
-lib/pluto/tasks/update.rake
-lib/pluto/tasks/version.rb
-test/helper.rb
-test/test_fetch.rb
+lib/feedfilter.rb
+lib/feedfilter/version.rb

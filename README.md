@@ -1,9 +1,9 @@
-# pluto-filter gem - feed filter and rules for easy (re)use 
+# feedfilter gem - feed filter and rules for easy (re)use 
 
-* home  :: [github.com/feedreader/pluto.filter](https://github.com/feedreader/pluto.filter)
-* bugs  :: [github.com/feedreader/pluto.filter/issues](https://github.com/feedreader/pluto.filter/issues)
-* gem   :: [rubygems.org/gems/pluto-filter](https://rubygems.org/gems/pluto-filter)
-* rdoc  :: [rubydoc.info/gems/pluto-filter](http://rubydoc.info/gems/pluto-filter)
+* home  :: [github.com/feedreader/feed.filter](https://github.com/feedreader/feed.filter)
+* bugs  :: [github.com/feedreader/feed.filter/issues](https://github.com/feedreader/feed.filter/issues)
+* gem   :: [rubygems.org/gems/feed-filter](https://rubygems.org/gems/feed-filter)
+* rdoc  :: [rubydoc.info/gems/feed-filter](http://rubydoc.info/gems/feed-filter)
 * forum :: [groups.google.com/group/feedreader](http://groups.google.com/group/feedreader)
 
 
@@ -16,7 +16,7 @@ To be done
 
 ## License
 
-The `pluto-filter` scripts are dedicated to the public domain.
+The `feedfilter` scripts are dedicated to the public domain.
 Use it as you please with no restrictions whatsoever.
 
 ## Questions? Comments?
