@@ -2,5 +2,13 @@ HISTORY.md
 Manifest.txt
 README.md
 Rakefile
+config/feedburner.txt
+config/feedflare.txt
 lib/feedfilter.rb
+lib/feedfilter/ads.rb
+lib/feedfilter/block_reader.rb
 lib/feedfilter/version.rb
+test/helper.rb
+test/test_ads.rb
+test/test_ads_all.rb
+test/test_block_reader.rb

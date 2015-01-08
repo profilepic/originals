@@ -10,12 +10,5 @@ require 'minitest/autorun'
 
 require 'feedfilter'
 
-
 LogUtils::Logger.root.level = :debug
-
-
-def read_snippet( name )
-  File.read( "#{FeedFilter.root}/test/snippets/#{name}")
-end
-
 
