@@ -11,7 +11,7 @@
 ## Usage
 
 
-### `strip_ads`  in `AdsFilter` module
+### `strip_ads`  (in `AdsFilter` module)
 
 ~~~
 require 'feedfilter'

@@ -18,7 +18,7 @@ Hoe.spec 'feedfilter' do
   self.history_file = 'HISTORY.md'
 
   self.extra_deps = [
-    ['textutils'],
+    ['textutils', '>=1.0.0'],
   ]
 
   self.licenses = ['Public Domain']
