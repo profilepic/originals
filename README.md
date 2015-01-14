@@ -65,13 +65,6 @@ FEEDBURNER_BUGS = %r{<img[^>]*?src=("|')(:?http:)?//feeds\.feedburner\.com/~r/[^
 ~~~
 
 
-## Alternatives
-
-Node.js
-
-- [node-resanitize](https://github.com/danmactough/node-resanitize)
-
-
 ## License
 
 The `feedfilter` scripts are dedicated to the public domain.
