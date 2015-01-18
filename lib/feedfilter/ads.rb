@@ -58,5 +58,5 @@ end # AdsFilters
     end
   end # module AdsFilter
 
-end # module FeedFitler
+end # module FeedFilter
 

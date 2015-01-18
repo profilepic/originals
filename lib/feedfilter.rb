@@ -12,6 +12,7 @@ require 'textutils'
 
 require 'feedfilter/version'  # let it always go first
 require 'feedfilter/ads'
+require 'feedfilter/includes'
 
 
 # say hello
