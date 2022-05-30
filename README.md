@@ -23,7 +23,7 @@ $ fab -h
 resulting in:
 
 ```
-Usage: fab [options]
+Usage: fab [options] name [attribute] ...
     -z, --zoom NUM                   Zoom factor x2, x4, x8, etc. (default: 1)
     -b, --background, --bg STRING    Background (default: transparent)
     -i, --id NUM                     Unique identifier (default: none)
@@ -58,10 +58,10 @@ $ fab -z4 punk alien headband
 
 resulting in:
 
-4x ![](https://github.com/pixelartexchange/originals/raw/master/i/punk0@x4.png)
+4x ![](https://github.com/pixelartexchange/originals/raw/master/i/punk0@4x.png)
 
 
-Let's try another:
+Let's try some more:
 
 ```
 $ fab punk male3 peak_spike goat horned_rim_glasses
@@ -81,15 +81,15 @@ resulting in:
 
 
 Let's try the `-b/--background` option with two solid colors
-(e.g. `#638596`  and `#ffbf00`) and with the built-in ukraine and  pride (rainbow) flag:
+(e.g. `0x638596`  and `0xffbf00` - r/g/b colors in hex) and with the built-in ukraine and pride (rainbow) flag:
 
 
 ```
-$ fab --background=638596 punk male3 peak_spike goat horned_rim_glasses
+$ fab --background=0x638596 punk male3 peak_spike goat horned_rim_glasses
 # -or-
-$ fab -b638596 punk male3 peak_spike goat horned_rim_glasses
+$ fab -b0x638596 punk male3 peak_spike goat horned_rim_glasses
 
-$ fab --background=ffbf00 punk male3 peak_spike goat horned_rim_glasses
+$ fab --background=0xffbf00 punk male3 peak_spike goat horned_rim_glasses
 $ fab --background=ukraine punk male3 peak_spike goat horned_rim_glasses
 $ fab --background=pride punk male3 peak_spike goat horned_rim_glasses
 ```
@@ -131,7 +131,7 @@ resulting in:
 ### Philips (24x24)
 
 Let's try some left-looking philips (pre-configured phunk
-with the built-in attributes: Male 2):
+with the built-in attributes: Male 3):
 
 ```
 $ fab philip
@@ -153,7 +153,7 @@ resulting in:
 ### Marilyns (24x24)
 
 Let's try some left-looking marilyns (pre-configured phunk
-with the built-in attributes: Female 2, Wild Blone, Mole, Blue Eye Shadow):
+with the built-in attributes: Female 3, Wild Blonde, Mole, Blue Eye Shadow):
 
 ```
 $ fab marilyn
@@ -162,8 +162,8 @@ $ fab marilyn flowers earring smile
 $ fab marilyn hot_lipstick big_shades
 
 # or with some backgrounds
-$ fab --background=638596 marilyn hot_lipstick big_shades
-$ fab --background=ffbf00 marilyn hot_lipstick big_shades
+$ fab --background=0x638596 marilyn hot_lipstick big_shades
+$ fab --background=0xffbf00 marilyn hot_lipstick big_shades
 $ fab --background=ukraine marilyn hot_lipstick big_shades
 $ fab --background=pride marilyn hot_lipstick big_shades
 ```
@@ -201,8 +201,8 @@ $ fab doge alien headband
 $ fab doge dark tiara big_shades
 
 # -or- with some backgrounds
-$ fab --background=638596 doge dark tiara big_shades
-$ fab --background=ffbf00 doge dark tiara big_shades
+$ fab --background=0x638596 doge dark tiara big_shades
+$ fab --background=0xffbf00 doge dark tiara big_shades
 $ fab --background=ukraine doge dark tiara big_shades
 $ fab --background=pride   doge dark tiara big_shades
 ```
