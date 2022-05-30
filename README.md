@@ -1,4 +1,4 @@
-#  Factory of Modern Originals (FOMO)
+#  Factory of Modern Originals (FoMO)
 
 originals - do-it-yourself (DIY) - yes, you can! - fab(criate) your own unique (pixel) artworks w/ text attributes (via built-in spritesheets) incl. 2x/4x/8x zoom for bigger sizes and more
 
