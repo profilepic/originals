@@ -13,7 +13,7 @@ Hoe.spec 'originals' do
 
   self.version = Originals::VERSION
 
-  self.summary = "originals - Do-It-Yourself (DIY) Yes, You Can! - Factory of Modern Originals (FOMO) - Fab(criate) Your Own Unique (Pixel) Artworks w/ Text Attributes (Via Built-In Spritesheets) Incl. 2X/4X/8X Zoom for Bigger Sizes And More"
+  self.summary = "originals - do-it-yourself (DIY) -  yes, you can! - Factory of Modern Originals (FoMO) - fab(criate) your own unique (pixel) artworks w/ text attributes (via built-in spritesheets) incl. 2x/4x/8x zoom for bigger sizes and more"
   self.description = summary
 
   self.urls    = { home: 'https://github.com/pixelartexchange/originals' }
