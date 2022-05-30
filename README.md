@@ -11,15 +11,232 @@ originals - do-it-yourself (DIY) - yes, you can! - fab(criate) your own unique (
 
 
 
-##  Usage
+##  Command-Line Usage
 
 
-To be done
+Use the `fab` (or `fabricate`) command line tool. Try:
+
+```
+$ fab -h
+```
+
+resulting in:
+
+```
+Usage: fab [options]
+    -z, --zoom NUM                   Zoom factor x2, x4, x8, etc. (default: 1)
+    -b, --background, --bg STRING    Background (default: transparent)
+    -i, --id NUM                     Unique identifier (default: none)
+
+    -h, --help                       Prints this help
+```
+
+
+
+### Punks (24x24)
+
+_Fabricate punk character pixel art originals from text attributes (from scratch / zero) via builtin spritesheet_
+
+
+Let's try:
+
+```
+$ fab punk alien headband
+```
+
+resulting in:
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/punk0.png)
+
+Let's try  the `-z/--zoom` factor 2x, 4x, 8x, etc.:
+
+```
+$ fab --zoom=4 punk alien headband
+# -or-
+$ fab -z4 punk alien headband
+```
+
+resulting in:
+
+4x ![](https://github.com/pixelartexchange/originals/raw/master/i/punk0@x4.png)
+
+
+Let's try another:
+
+```
+$ fab punk male3 peak_spike goat horned_rim_glasses
+$ fab punk demon heart_shades
+```
+
+resulting in:
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/punk1.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/punk2.png)
+
+4x  (using the `--zoom=4`/`-z4` option)
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/punk1@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/punk2@4x.png)
+
+
+
+Let's try the `-b/--background` option with two solid colors
+(e.g. `#638596`  and `#ffbf00`) and with the built-in ukraine and  pride (rainbow) flag:
+
+
+```
+$ fab --background=638596 punk male3 peak_spike goat horned_rim_glasses
+# -or-
+$ fab -b638596 punk male3 peak_spike goat horned_rim_glasses
+
+$ fab --background=ffbf00 punk male3 peak_spike goat horned_rim_glasses
+$ fab --background=ukraine punk male3 peak_spike goat horned_rim_glasses
+$ fab --background=pride punk male3 peak_spike goat horned_rim_glasses
+```
+
+resulting in:
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/punk1.1.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/punk1.2.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/punk1.3.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/punk1.4.png)
+
+4x  (using the `--zoom=4`/`-z4` option)
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/punk1.1@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/punk1.2@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/punk1.3@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/punk1.4@4x.png)
+
+
+
+### Phunks (24x24)
+
+Let's try some left-looking punks also known as Phunks -  "hand-phlipped" by Philip the Intern
+
+```
+$ fab phunk male2 spots hoodie
+```
+
+resulting in:
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/phunk0.png)
+
+4x  (using the `--zoom=4`/`-z4` option)
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/phunk0@4x.png)
+
+
+
+### Philips (24x24)
+
+Let's try some left-looking philips (pre-configured phunk
+with the built-in attributes: Male 2):
+
+```
+$ fab philip
+$ fab philip jester_hat smile
+```
+
+resulting in:
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/philip0.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/philip1.png)
+
+4x  (using the `--zoom=4`/`-z4` option)
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/philip0@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/philip1@4x.png)
+
+
+
+### Marilyns (24x24)
+
+Let's try some left-looking marilyns (pre-configured phunk
+with the built-in attributes: Female 2, Wild Blone, Mole, Blue Eye Shadow):
+
+```
+$ fab marilyn
+$ fab marilyn 3d_glasses
+$ fab marilyn flowers earring smile
+$ fab marilyn hot_lipstick big_shades
+
+# or with some backgrounds
+$ fab --background=638596 marilyn hot_lipstick big_shades
+$ fab --background=ffbf00 marilyn hot_lipstick big_shades
+$ fab --background=ukraine marilyn hot_lipstick big_shades
+$ fab --background=pride marilyn hot_lipstick big_shades
+```
+
+resulting in:
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn0.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn1.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn2.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn2.1.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn2.2.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn2.3.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn2.4.png)
+
+4x  (using the `--zoom=4`/`-z4` option)
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn0@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn1@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn2.1@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn2.2@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn2.3@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn2.4@4x.png)
+
+
+### Shiba Inu Doge (24x24)
+
+
+Let's try some shiba inu doge - much wow:
+
+
+```
+$ fab doge alien headband
+$ fab doge dark tiara big_shades
+
+# -or- with some backgrounds
+$ fab --background=638596 doge dark tiara big_shades
+$ fab --background=ffbf00 doge dark tiara big_shades
+$ fab --background=ukraine doge dark tiara big_shades
+$ fab --background=pride   doge dark tiara big_shades
+```
+
+resulting in:
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/doge0.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/doge1.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/doge1.1.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/doge1.2.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/doge1.3.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/doge1.4.png)
+
+4x  (using the `--zoom=4`/`-z4` option)
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/doge0@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/doge1@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/doge1.1@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/doge1.2@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/doge1.3@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/doge1.4@4x.png)
+
+
+
+And so on. Stay tuned for more original artwork series!
 
 
 
 
+## Install
 
+Just install the gem:
+
+    $ gem install originals
 
 
 
@@ -32,16 +249,4 @@ Use it as you please with no restrictions whatsoever.
 ## Questions? Comments?
 
 Post them on the [CryptoPunksDev reddit](https://old.reddit.com/r/CryptoPunksDev). Thanks.
-
-
-
-
-
-
-
-
-
-
-
-
 

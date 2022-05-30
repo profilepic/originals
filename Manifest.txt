@@ -3,5 +3,8 @@ LICENSE.md
 Manifest.txt
 README.md
 Rakefile
+bin/fab
+bin/fabricate
 lib/originals.rb
+lib/originals/tool.rb
 lib/originals/version.rb
