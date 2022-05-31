@@ -1,6 +1,7 @@
 ## 3rd party libs
 require 'cryptopunks'
 require 'shibainus'
+require 'moonbirds'
 
 
 
@@ -45,6 +46,10 @@ def self.fabricate( name, *attributes, background: nil )  ## add fac alias - why
                  'shiba', 'shibas',
                  'shibainu', 'shibainus'].include?( key )
               Originals.factory.shiba( *attributes, background: background )
+          elsif ['bird', 'birds',
+                 'moonbird', 'moonbirds',
+                 'owl', 'owls'].include?( key )
+              Originals.factory.bird( *attributes, background: background )
           else
             puts "!! ERROR; don't know how to fabricate >#{name}<; sorry"
             exit 1
@@ -100,6 +105,7 @@ end
 
 
 
+## add method alias doge, shiba_inu etc. - why? why not?
 def shiba( *attributes, background: nil )
     ## note: if no attributes passed in
     ##    default to ['Classic']
@@ -109,6 +115,18 @@ def shiba( *attributes, background: nil )
     doge = _background( doge, background )  if background
     doge
 end
+
+
+## add method alis moonbird, owl etc. - why? why not?
+def bird( *attributes, background: nil )
+  attributes = ['Brave Glitch']  if attributes.size == 0
+
+  bird = Moonbird::Image.generate( *attributes )
+  bird = _background( bird, background )  if background
+  bird
+end
+
+
 
 
 ###

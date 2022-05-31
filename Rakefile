@@ -28,6 +28,7 @@ Hoe.spec 'originals' do
   self.extra_deps = [
     ['cryptopunks'],
     ['shibainus'],
+    ['moonbirds'],
   ]
 
   self.licenses = ['Public Domain']

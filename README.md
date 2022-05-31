@@ -227,6 +227,49 @@ resulting in:
 
 
 
+
+### Moonbirds / Owls (42x42)
+
+
+Let's try some super-rare never-before-seen moonbirds / owls:
+
+```
+$ fab moonbird crescent_golden beak_small_golden eyes_open_golden beanie
+$ fab moonbird tabby_brown beak_small_orange eyes_open_white  \
+        mcdonalds_red drivethru_onduty mcdonalds_shirt_old_skool
+
+# -or- with some backgrounds
+$ fab --background=0x638596 moonbird tabby_brown beak_small_orange eyes_open_white  \
+        mcdonalds_red drivethru_onduty mcdonalds_shirt_old_skool
+$ fab --background=0xffbf00 moonbird tabby_brown beak_small_orange eyes_open_white  \
+        mcdonalds_red drivethru_onduty mcdonalds_shirt_old_skool
+$ fab --background=ukraine moonbird tabby_brown beak_small_orange eyes_open_white  \
+        mcdonalds_red drivethru_onduty mcdonalds_shirt_old_skool
+$ fab --background=pride   moonbird tabby_brown beak_small_orange eyes_open_white  \
+        mcdonalds_red drivethru_onduty mcdonalds_shirt_old_skool
+```
+
+resulting in:
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird0.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1.1.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1.2.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1.3.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1.4.png)
+
+4x  (using the `--zoom=4`/`-z4` option)
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird0@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1.1@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1.2@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1.3@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1.4@4x.png)
+
+
+
+
 And so on. Stay tuned for more original artwork series!
 
 

@@ -95,4 +95,32 @@ backgrounds.each_with_index do |background,i|
 end
 
 
+####
+#   Moonbirds / (Pixel) Owls (42x42) Series
+org = Original::Image.fabricate( 'Bird', 'Crescent Golden',
+                                         'Beak Small Golden',
+                                         'Eyes Open Golden',
+                                         'Beanie' )
+org.save( "./tmp/moonbird0.png" )
+org.zoom(4).save( "./tmp/moonbird0@4x.png" )
+
+attributes = ["Tabby Brown",
+              "Beak Small Orange",
+              "Eyes Open White",
+              "McDonald's Red",
+              "Drive-Thru On Duty",
+              "McDonald's Shirt (Old Skool)"]
+org = Original::Image.fabricate( 'Bird', *attributes )
+org.save( "./tmp/moonbird1.png")
+org.zoom(4).save( "./tmp/moonbird1@4x.png" )
+
+backgrounds = ['#638596', '#ffbf00', 'ukraine', 'pride']
+backgrounds.each_with_index do |background,i|
+  org = Original::Image.fabricate( 'Bird', *attributes, background: background )
+  org.save( "./tmp/moonbird1.#{i+1}.png")
+  org.zoom(4).save( "./tmp/moonbird1.#{i+1}@4x.png" )
+  org.zoom(8).save( "./tmp/moonbird1.#{i+1}@8x.png" )
+end
+
+
 puts "bye"
