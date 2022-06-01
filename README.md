@@ -228,6 +228,47 @@ resulting in:
 
 
 
+### Coolcats (24x24)
+
+
+Let's try some coolcats:
+
+
+```
+$ fab coolcat ditto beret_red
+$ fab coolcat unamused
+$ fab coolcat tv_head_grey tv_face_no_signal
+
+# -or- with some backgrounds
+$ fab --background=0x638596 coolcat tv_head_grey tv_face_no_signal
+$ fab --background=0xffbf00 coolcat tv_head_grey tv_face_no_signal
+$ fab --background=ukraine coolcat tv_head_grey tv_face_no_signal
+$ fab --background=pride   coolcat tv_head_grey tv_face_no_signal
+```
+
+resulting in:
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat0.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat1.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat2.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat2.1.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat2.2.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat2.3.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat2.4.png)
+
+4x  (using the `--zoom=4`/`-z4` option)
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat0@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat1@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat2@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat2.1@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat2.2@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat2.3@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat2.4@4x.png)
+
+
+
+
 ### Moonbirds / Owls (42x42)
 
 

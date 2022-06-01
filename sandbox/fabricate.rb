@@ -96,6 +96,33 @@ end
 
 
 ####
+#   Coolcats (24x24) Series
+
+org = Original::Image.fabricate( 'Coolcat', 'Ditto', 'Beret Red' )
+org.save( "./tmp/coolcat0.png" )
+org.zoom(4).save( "./tmp/coolcat0@4x.png" )
+
+org = Original::Image.fabricate( 'Coolcat', 'Unamused' )
+org.save( "./tmp/coolcat1.png" )
+org.zoom(4).save( "./tmp/coolcat1@4x.png" )
+
+
+attributes = ['TV Head Grey',  'TV Face No Signal']
+org = Original::Image.fabricate( 'Coolcat', *attributes )
+org.save( "./tmp/coolcat2.png")
+org.zoom(4).save( "./tmp/coolcat2@4x.png" )
+
+backgrounds = ['#638596', '#ffbf00', 'ukraine', 'pride']
+backgrounds.each_with_index do |background,i|
+  org = Original::Image.fabricate( 'Coolcat', *attributes, background: background )
+  org.save( "./tmp/coolcat2.#{i+1}.png")
+  org.zoom(4).save( "./tmp/coolcat2.#{i+1}@4x.png" )
+  org.zoom(8).save( "./tmp/coolcat2.#{i+1}@8x.png" )
+end
+
+
+
+####
 #   Moonbirds / (Pixel) Owls (42x42) Series
 org = Original::Image.fabricate( 'Bird', 'Crescent Golden',
                                          'Beak Small Golden',

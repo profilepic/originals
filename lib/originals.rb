@@ -2,6 +2,7 @@
 require 'cryptopunks'
 require 'shibainus'
 require 'moonbirds'
+require 'coolcats'
 
 
 
@@ -50,6 +51,8 @@ def self.fabricate( name, *attributes, background: nil )  ## add fac alias - why
                  'moonbird', 'moonbirds',
                  'owl', 'owls'].include?( key )
               Originals.factory.bird( *attributes, background: background )
+          elsif ['coolcat', 'coolcats'].include?( key )
+              Originals.factory.coolcat( *attributes, background: background )
           else
             puts "!! ERROR; don't know how to fabricate >#{name}<; sorry"
             exit 1
@@ -117,7 +120,7 @@ def shiba( *attributes, background: nil )
 end
 
 
-## add method alis moonbird, owl etc. - why? why not?
+## add method alias moonbird, owl etc. - why? why not?
 def bird( *attributes, background: nil )
   attributes = ['Brave Glitch']  if attributes.size == 0
 
@@ -126,6 +129,12 @@ def bird( *attributes, background: nil )
   bird
 end
 
+
+def coolcat( *attributes, background: nil )
+  cat = Coolcat::Image.generate( *attributes )
+  cat = _background( cat, background )  if background
+  cat
+end
 
 
 

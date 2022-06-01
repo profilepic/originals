@@ -14,8 +14,13 @@ class Tool
       end
 
       opts.on("--background STRING", "--bg STRING", "-b", String,
-              "Background (default: transparent)") do |str|
+              "Background (default: transparent|0x0)") do |str|
           options[ :background] = str
+      end
+
+      opts.on("--name STRING", "-n", String,
+              "Base name (default: punk|phunk|marilyn|etc.)") do |str|
+          options[ :name] = str
       end
 
       opts.on("--id NUM", "-i", Integer,
@@ -53,7 +58,13 @@ class Tool
                                      background: options[ :background] )
 
 
-    basename = "#{key}#{options[:id]}"
+
+    basename = if options[:name]
+                 "#{options[:name]}#{options[:id]}"
+               else
+                 "#{key}#{options[:id]}"
+               end
+
 
     path =  if options[:zoom]
                img = img.zoom( options[:zoom] )
