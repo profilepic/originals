@@ -3,6 +3,7 @@ require 'cryptopunks'
 require 'shibainus'
 require 'moonbirds'
 require 'coolcats'
+require 'nouns'
 
 
 
@@ -53,6 +54,8 @@ def self.fabricate( name, *attributes, background: nil )  ## add fac alias - why
               Originals.factory.bird( *attributes, background: background )
           elsif ['coolcat', 'coolcats'].include?( key )
               Originals.factory.coolcat( *attributes, background: background )
+          elsif ['noun', 'nouns'].include?( key )
+              Originals.factory.noun( *attributes, background: background )
           else
             puts "!! ERROR; don't know how to fabricate >#{name}<; sorry"
             exit 1
@@ -135,6 +138,19 @@ def coolcat( *attributes, background: nil )
   cat = _background( cat, background )  if background
   cat
 end
+
+
+def noun( *attributes, background: nil )
+  attributes = ['Body Grayscale 1',
+                'Checker Bigwalk Rainbow',
+                'Head Beer',
+                'Glasses Square Fullblack']  if attributes.size == 0
+
+  noun = Noun::Image.generate( *attributes )
+  noun = _background( noun, background )  if background
+  noun
+end
+
 
 
 

@@ -269,6 +269,56 @@ resulting in:
 
 
 
+### Nouns (32x32)
+
+
+Let's try some noun (pixel avatars):
+
+
+```
+$ fab noun body_grayscale1 checker_bigwalk_rainbow \
+           head_beer glasses_square_fullblack
+$ fab noun body_gradient_pride bling_love \
+           head_bubblegum glasses_square_yellow_saturated
+$ fab noun body_red txt_lol \
+           head_weed glasses_square_black_rgb
+
+# -or- with some backgrounds
+$ fab --background=0x638596 noun body_red txt_lol \
+           head_weed glasses_square_black_rgb
+$ fab --background=0xffbf00 noun body_red txt_lol \
+           head_weed glasses_square_black_rgb
+$ fab --background=ukraine noun body_red txt_lol \
+           head_weed glasses_square_black_rgb
+$ fab --background=pride   noun body_red txt_lol \
+           head_weed glasses_square_black_rgb
+```
+
+resulting in:
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/noun0.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/noun1.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/noun2.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/noun2.1.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/noun2.2.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/noun2.3.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/noun2.4.png)
+
+4x  (using the `--zoom=4`/`-z4` option)
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/noun0@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/noun1@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/noun2@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/noun2.1@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/noun2.2@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/noun2.3@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/noun2.4@4x.png)
+
+
+
+
+
+
 ### Moonbirds / Owls (42x42)
 
 

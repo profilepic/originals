@@ -17,7 +17,7 @@ org = Original::Image.fabricate( 'Punk', *attributes )
 org.save( "./tmp/punk1.png" )
 org.zoom(4).save( "./tmp/punk1@4x.png" )
 
-backgrounds = ['#638596', '#ffbf00', 'ukraine', 'pride']
+backgrounds = ['#638596', '#ffbf00', 'Ukraine', 'Pride']
 backgrounds.each_with_index do |background,i|
   org = Original::Image.fabricate( 'Punk', *attributes, background: background )
   org.save( "./tmp/punk1.#{i+1}.png" )
@@ -51,7 +51,7 @@ org = Original::Image.fabricate( 'Marilyn', *attributes )
 org.save( "./tmp/marilyn2.png" )
 org.zoom(4).save( "./tmp/marilyn2@4x.png" )
 
-backgrounds = ['#638596', '#ffbf00', 'ukraine', 'pride']
+backgrounds = ['#638596', '#ffbf00', 'Ukraine', 'Pride']
 backgrounds.each_with_index do |background,i|
   org = Original::Image.fabricate( 'Marilyn', *attributes, background: background )
   org.save( "./tmp/marilyn2.#{i+1}.png" )
@@ -87,7 +87,7 @@ org = Original::Image.fabricate( 'Doge', *attributes )
 org.save( "./tmp/doge1.png")
 org.zoom(4).save( "./tmp/doge1@4x.png" )
 
-backgrounds = ['#638596', '#ffbf00', 'ukraine', 'pride']
+backgrounds = ['#638596', '#ffbf00', 'Ukraine', 'Pride']
 backgrounds.each_with_index do |background,i|
   org = Original::Image.fabricate( 'Doge', *attributes, background: background )
   org.save( "./tmp/doge1.#{i+1}.png")
@@ -112,7 +112,7 @@ org = Original::Image.fabricate( 'Coolcat', *attributes )
 org.save( "./tmp/coolcat2.png")
 org.zoom(4).save( "./tmp/coolcat2@4x.png" )
 
-backgrounds = ['#638596', '#ffbf00', 'ukraine', 'pride']
+backgrounds = ['#638596', '#ffbf00', 'Ukraine', 'Pride']
 backgrounds.each_with_index do |background,i|
   org = Original::Image.fabricate( 'Coolcat', *attributes, background: background )
   org.save( "./tmp/coolcat2.#{i+1}.png")
@@ -120,6 +120,41 @@ backgrounds.each_with_index do |background,i|
   org.zoom(8).save( "./tmp/coolcat2.#{i+1}@8x.png" )
 end
 
+
+###########################
+#   Noun (Pixel Avatar)   (32x32)  Series
+org = Original::Image.fabricate( 'Noun',
+                                 'Body Grayscale 1',
+                                 'Checker Bigwalk Rainbow',
+                                 'Head Beer',
+                                 'Glasses Square Fullblack' )
+org.save( "./tmp/noun0.png" )
+org.zoom(4).save( "./tmp/noun0@4x.png" )
+
+org = Original::Image.fabricate( 'Noun',
+                                 'Body Gradient Pride',
+                                 'Bling Love',
+                                 'Head Bubblegum',
+                                 'Glasses Square Yellow Saturated' )
+org.save( "./tmp/noun1.png" )
+org.zoom(4).save( "./tmp/noun1@4x.png" )
+
+
+attributes = ['Body Red',
+              'Txt LOL',
+              'Head Weed',
+              'Glasses Square Black RGB']
+org = Original::Image.fabricate( 'Noun', *attributes )
+org.save( "./tmp/noun2.png")
+org.zoom(4).save( "./tmp/noun2@4x.png" )
+
+backgrounds = ['#638596', '#ffbf00', 'Ukraine', 'Pride']
+backgrounds.each_with_index do |background,i|
+  org = Original::Image.fabricate( 'Noun', *attributes, background: background )
+  org.save( "./tmp/noun2.#{i+1}.png")
+  org.zoom(4).save( "./tmp/noun2.#{i+1}@4x.png" )
+  org.zoom(8).save( "./tmp/noun2.#{i+1}@8x.png" )
+end
 
 
 ####
@@ -141,7 +176,7 @@ org = Original::Image.fabricate( 'Bird', *attributes )
 org.save( "./tmp/moonbird1.png")
 org.zoom(4).save( "./tmp/moonbird1@4x.png" )
 
-backgrounds = ['#638596', '#ffbf00', 'ukraine', 'pride']
+backgrounds = ['#638596', '#ffbf00', 'Ukraine', 'Pride']
 backgrounds.each_with_index do |background,i|
   org = Original::Image.fabricate( 'Bird', *attributes, background: background )
   org.save( "./tmp/moonbird1.#{i+1}.png")

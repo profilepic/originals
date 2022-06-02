@@ -30,6 +30,7 @@ Hoe.spec 'originals' do
     ['shibainus'],
     ['moonbirds'],
     ['coolcats'],
+    ['nouns'],
   ]
 
   self.licenses = ['Public Domain']
@@ -39,3 +40,4 @@ Hoe.spec 'originals' do
   }
 
 end
+
