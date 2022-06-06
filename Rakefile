@@ -31,6 +31,7 @@ Hoe.spec 'originals' do
     ['moonbirds'],
     ['coolcats'],
     ['nouns'],
+    ['webclient'],
   ]
 
   self.licenses = ['Public Domain']

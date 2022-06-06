@@ -1,6 +1,6 @@
 ###
 #  to run use
-#     ruby -I ./lib sandbox/fabricate.rb
+#     ruby -I ./lib sandbox/test_fabricate.rb
 
 
 require 'originals'

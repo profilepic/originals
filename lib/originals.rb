@@ -5,6 +5,8 @@ require 'moonbirds'
 require 'coolcats'
 require 'nouns'
 
+require 'webclient'
+
 
 
 ## our own code
@@ -28,127 +30,113 @@ end
 ##
 #  "wrap" fabricate inside Image - why? why not?
 class Image
-def self.fabricate( name, *attributes, background: nil )  ## add fac alias - why? why not?
+
+def self.fabricate( name, *attributes, background: nil )
    ## normalize name of series
    ##   e.g.   Shiba Inu  => shibainu  etc.
-   key = name.downcase.gsub( '[ ()_-]', '' )
+   key = Originals.factory._norm_name( name )
 
-   img =  if ['punk', 'punks',
-              'cryptopunk', 'cryptopunks'].include?( key )
-              Originals.factory.punk( *attributes, background: background )
-          elsif ['phunk', 'phunks',
-            'cryptophunk', 'cryptophunks'].include?( key )
-              Originals.factory.phunk( *attributes, background: background )
-          elsif ['marilyn', 'marilyns' ].include?( key )
-              Originals.factory.marilyn( *attributes, background: background )
-          elsif ['philip', 'philips',
-                 'philipp', 'philipps' ].include?( key )
-              Originals.factory.philip( *attributes, background: background )
-          elsif ['doge', 'doges',
-                 'shiba', 'shibas',
-                 'shibainu', 'shibainus'].include?( key )
-              Originals.factory.shiba( *attributes, background: background )
-          elsif ['bird', 'birds',
-                 'moonbird', 'moonbirds',
-                 'owl', 'owls'].include?( key )
-              Originals.factory.bird( *attributes, background: background )
-          elsif ['coolcat', 'coolcats'].include?( key )
-              Originals.factory.coolcat( *attributes, background: background )
-          elsif ['noun', 'nouns'].include?( key )
-              Originals.factory.noun( *attributes, background: background )
-          else
-            puts "!! ERROR; don't know how to fabricate >#{name}<; sorry"
-            exit 1
-          end
+   img = if ['punk', 'punks',
+             'cryptopunk', 'cryptopunks'].include?( key )
+                   Originals.factory.punk( *attributes )
+         elsif ['phunk', 'phunks',
+                'cryptophunk', 'cryptophunks'].include?( key )
+                  Originals.factory.phunk( *attributes )
+         elsif ['marilyn', 'marilyns' ].include?( key )
+                  Originals.factory.marilyn( *attributes )
+         elsif ['philip', 'philips',
+                'philipp', 'philipps' ].include?( key )
+                  Originals.factory.philip( *attributes )
+         elsif ['doge', 'doges',
+                'shiba', 'shibas',
+                'shibainu', 'shibainus'].include?( key )
+                  Originals.factory.shiba( *attributes )
+         elsif ['bird', 'birds',
+                'moonbird', 'moonbirds',
+                'owl', 'owls'].include?( key )
+                  Originals.factory.bird( *attributes )
+         elsif ['coolcat', 'coolcats'].include?( key )
+                  Originals.factory.coolcat( *attributes )
+         elsif ['noun', 'nouns'].include?( key )
+                  Originals.factory.noun( *attributes )
+         else
+             return nil   ## return nil
+         end
+
+   ## note: keep add background as a separate (last) step for now - why? why not?
+   img = Originals.factory._background( img, background )   if background
    img
 end
 class << self
-   alias_method :fab, :fabricate
+  alias_method :fab, :fabricate
 end
+
+
 end # class Image
-
-
 
 
 
 class Factory     ## add Fabricator/Artist/Artfactory/? alias or such - why? why not?
 
-def punk( *attributes, mirror: false, background: nil )
+
+def punk( *attributes )
     ## note: if no attributes passed in
     ##    default to ['Male 2']
     attributes = ['Male 2']  if attributes.size == 0
 
-   _generate_punk( *attributes,
-                   mirror:     mirror,
-                   background: background )
+    Cryptopunks::Image.generate( *attributes )
 end
 
-def phunk( *attributes, background: nil )
-   punk( *attributes,
-          mirror: true,
-          background: background )
+def phunk( *attributes )
+  punk( *attributes ).mirror
 end
 
 
 MARILYN_ATTRIBUTES = ['Female 3', 'Wild Blonde', 'Mole',
                       'Blue Eye Shadow']
 
-def marilyn( *attributes, background: nil )
-   _generate_punk( *MARILYN_ATTRIBUTES,
-                   *attributes,
-                   mirror: true,
-                   background: background )
+def marilyn( *attributes )
+  phunk( *MARILYN_ATTRIBUTES, *attributes )
 end
 
 
 PHILIP_ATTRIBUTES = ['Male 3']
-def philip( *attributes, background: nil )
-  _generate_punk( *PHILIP_ATTRIBUTES,
-                  *attributes,
-                  mirror: true,
-                  background: background )
+def philip( *attributes )
+  phunk( *PHILIP_ATTRIBUTES, *attributes )
 end
 
 
 
 ## add method alias doge, shiba_inu etc. - why? why not?
-def shiba( *attributes, background: nil )
+def shiba( *attributes )
     ## note: if no attributes passed in
     ##    default to ['Classic']
     attributes = ['Classic']  if attributes.size == 0
 
-    doge = Shiba::Image.generate( *attributes )
-    doge = _background( doge, background )  if background
-    doge
+    Shiba::Image.generate( *attributes )
 end
 
 
 ## add method alias moonbird, owl etc. - why? why not?
-def bird( *attributes, background: nil )
+def bird( *attributes )
   attributes = ['Brave Glitch']  if attributes.size == 0
 
-  bird = Moonbird::Image.generate( *attributes )
-  bird = _background( bird, background )  if background
-  bird
+  Moonbird::Image.generate( *attributes )
 end
 
 
-def coolcat( *attributes, background: nil )
-  cat = Coolcat::Image.generate( *attributes )
-  cat = _background( cat, background )  if background
-  cat
+def coolcat( *attributes )
+  Coolcat::Image.generate( *attributes )
 end
 
 
-def noun( *attributes, background: nil )
+def noun( *attributes )
   attributes = ['Body Grayscale 1',
                 'Checker Bigwalk Rainbow',
                 'Head Beer',
                 'Glasses Square Fullblack']  if attributes.size == 0
 
-  noun = Noun::Image.generate( *attributes )
-  noun = _background( noun, background )  if background
-  noun
+  Noun::Image.generate( *attributes )
 end
 
 
@@ -156,19 +144,6 @@ end
 
 ###
 #   helpers
-
-def _generate_punk( *attributes,
-                     mirror:     false,
-                     background: nil )
-   punk = Cryptopunks::Image.generate( *attributes )
-
-   punk = punk.mirror         if mirror
-   ## note: add background as LAST step  (after mirror operation)
-   ##                that is, if mirror=true background will NOT get mirrored
-   punk = _background( punk, background )  if background
-   punk
-end
-
 
 def _background( base, background )
     width, height = base.width, base.height
@@ -187,6 +162,23 @@ def _background( base, background )
     img2
 end
 
+def _norm_name( str )
+   str.downcase.gsub( /[ ()_-]/, '' )
+end
+
+def _parse_id( str )
+  if str.gsub( /[ #()._-]/, '' ) =~ /
+                    ^(no|n|id)?
+                    (?<id>[0-9]+)$
+                     /ix
+    id = Regexp.last_match[:id].to_i(10)   ## note: add base 10 (for 008 or such)
+    id
+  else
+     nil   # retur nil if no match
+  end
+end
+
+
 end # class Factory
 
 
@@ -194,7 +186,7 @@ end # module Originals
 
 
 
-
+require 'originals/service'
 require 'originals/tool'
 
 

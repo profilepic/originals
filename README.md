@@ -23,10 +23,12 @@ $ fab -h
 resulting in:
 
 ```
-Usage: fab [options] name [attribute] ...
+Usage: fab [options] name [attribute attribute ...]
+       fab [options] name id
     -z, --zoom NUM                   Zoom factor x2, x4, x8, etc. (default: 1)
     -b, --background, --bg STRING    Background (default: transparent)
     -i, --id NUM                     Unique identifier (default: none)
+    -n, --name STRING                Base name (default: punk|phunk|marilyn|etc.)
 
     -h, --help                       Prints this help
 ```
@@ -35,7 +37,7 @@ Usage: fab [options] name [attribute] ...
 
 ### Punks (24x24)
 
-_A free (pixel) art service brought to you by [punks, (phunks, philips, marilyns, & more) generation library / gem »](https://github.com/cryptopunksnotdead/cryptopunks/tree/master/cryptopunks)_
+_A free (pixel) art service brought to you by the [punks, (phunks, philips, marilyns, & more) generation library / gem »](https://github.com/cryptopunksnotdead/cryptopunks/tree/master/cryptopunks)_
 
 
 
@@ -194,7 +196,7 @@ resulting in:
 
 ### Shiba Inu Doge (24x24)
 
-_A free (pixel) art service brought to you by [shiba-inus generation library / gem »](https://github.com/pixelartexchange/pixelart/tree/master/shibainus)_
+_A free (pixel) art service brought to you by the [shiba-inus generation library / gem »](https://github.com/pixelartexchange/pixelart/tree/master/shibainus)_
 
 
 Let's try some shiba inu doge - much wow:
@@ -234,7 +236,7 @@ resulting in:
 
 ### Coolcats (24x24)
 
-_A free (pixel) art service brought to you by [coolcats generation library / gem »](https://github.com/pixelartexchange/pixelart/tree/master/coolcats)_
+_A free (pixel) art service brought to you by the [coolcats generation library / gem »](https://github.com/pixelartexchange/pixelart/tree/master/coolcats)_
 
 
 Let's try some coolcats:
@@ -277,7 +279,7 @@ resulting in:
 
 ### Nouns (32x32)
 
-_A free (pixel) art service brought to you by [nouns generation library / gem »](https://github.com/pixelartexchange/pixelart/tree/master/nouns)_
+_A free (pixel) art service brought to you by the [nouns generation library / gem »](https://github.com/pixelartexchange/pixelart/tree/master/nouns)_
 
 
 Let's try some noun (pixel avatars):
@@ -329,7 +331,7 @@ resulting in:
 
 ### Moonbirds / Owls (42x42)
 
-_A free (pixel) art service brought to you by [moonbirds (& owls)generation library / gem »](https://github.com/pixelartexchange/pixelart/tree/master/moonbirds)_
+_A free (pixel) art service brought to you by the [moonbirds (& owls)generation library / gem »](https://github.com/pixelartexchange/pixelart/tree/master/moonbirds)_
 
 
 
@@ -373,6 +375,69 @@ resulting in:
 
 And so on. Stay tuned for more original artwork series!
 
+
+
+
+### Bonus: Readymades - Start w/ (Pixel) Art From (Online) Collections
+
+_A free readymade (pixel) art service brought to you by the [artbase "(server edition) »](https://github.com/pixelartexchange/artbase.server)_
+
+
+Yes, you can. Pick any readymade pixel art (by number) from any of the many collections served-up by an artbase (server edition)
+installation.
+By default "out-of-the-box" the artbase web server / service installation running online
+at [**pixelartexchange.herokuapp.com »**](https://pixelartexchange.herokuapp.com/) gets called via HTTP.
+
+
+
+####  1000 More Punks (24x24)
+
+Let's try some more punks:
+
+```
+$ fab morepunk no.179
+$ fab morepunk no.180
+$ fab morepunk no.190
+```
+
+resulting in:
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/morepunk179.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/morepunk180.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/morepunk190.png)
+
+4x  (using the `--zoom=4`/`-z4` option)
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/morepunk179@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/morepunk180@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/morepunk190@4x.png)
+
+
+
+####  Punk Rocks (24x24)
+
+Let's try some punk rocks:
+
+```
+$ fab punkrock no.1
+$ fab punkrock no.4
+$ fab punkrock no.5
+```
+
+resulting in:
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/punkrock1.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/punkrock4.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/punkrock5.png)
+
+4x  (using the `--zoom=4`/`-z4` option)
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/punkrock1@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/punkrock4@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/punkrock5@4x.png)
+
+
+And so on.
 
 
 

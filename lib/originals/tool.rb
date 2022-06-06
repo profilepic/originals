@@ -1,6 +1,9 @@
 module Originals
 class Tool
 
+
+
+
   def self.main( args=ARGV )
     puts "==> welcome to the fab(ricate) tool with args:"
     pp args
@@ -50,20 +53,57 @@ class Tool
     name       = args[0]   ## todo/check - use collection_name/slug or such?
     attributes = args[1..-1]
 
+
     ## normalize name of series
     ##   e.g.   Shiba Inu  => shibainu  etc.
-    key = name.downcase.gsub( '[ ()_-]', '' )
+    key = Originals.factory._norm_name( name )
 
-    img = Original::Image.fabricate( key, *attributes,
-                                     background: options[ :background] )
+    ## check for readymade via series id
+    ##    allow some "literal" variants e.g.
+    ##      punk no.1 or no.001
+    ##      punk #1   or #001
+    ##  etc.
+    ##    and some more in the future - why? why not?
+
+    id = nil
+
+    img =   if attributes.size == 1 && id=Originals.factory._parse_id( attributes[0] )
+                ## check for known collection names
+                ## (mostly singular to plural)  - keep? why? why not?
+                collection = Artbase::COLLECTIONS[ key ] || key
+                Artbase::Image.get( collection, id )
+             else
+                Original::Image.fabricate( key, *attributes )
+             end
+
+    if img.nil?
+      puts "!! ERROR - don't know how to fabricate >#{name}<; sorry"
+      exit 1
+    end
 
 
+    ## note: keep adding background as a separate step for now
+    if options[ :background]
+       ##  hack: for now for artbase collections
+       ##          try to remove background if any
+       ##         keep? why? why not?
+       img = img.transparent    if id
 
-    basename = if options[:name]
-                 "#{options[:name]}#{options[:id]}"
-               else
-                 "#{key}#{options[:id]}"
-               end
+      img = Original.factory._background( img,
+                                          options[ :background ] )
+    end
+
+    basename = String.new('')   ## note: start with our own string buffer
+                                ##    otherwise assigned first string gets modified!!
+    basename +=   options[:name] ? options[:name] : key
+
+    basename += if options[:id]
+                  options[:id]
+                elsif id
+                  id.to_s
+                else
+                  '' # add nothing
+                end
 
 
     path =  if options[:zoom]

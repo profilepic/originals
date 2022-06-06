@@ -37,3 +37,12 @@ build/
 # Gladiator (Glimmer Editor)
 .gladiator
 .DS_Store
+
+
+
+####
+#  exclude all tmp & tmp2 and o directory (in all levels)
+tmp/
+tmp2/
+o/
+
