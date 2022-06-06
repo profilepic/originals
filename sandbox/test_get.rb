@@ -40,11 +40,12 @@ ids.each do |id|
   sleep( delay_in_secs )
   base = Artbase::Image.get( 'dooggies', id ).transparent
   base.save( "./tmp2/dooggie#{id}.png" )
-  base.zoom(4).save( "./tmp2/doogie#{id}@4x.png" )
+  base.zoom(4).save( "./tmp2/dooggie#{id}@4x.png" )
 end
 
 
 __END__
+
 ids = [1, 4, 5]
 ids.each do |id|
    sleep( delay_in_secs )
