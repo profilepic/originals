@@ -383,7 +383,7 @@ And so on. Stay tuned for more original artwork series!
 _A free readymade (pixel) art service brought to you by the [artbase (server edition) »](https://github.com/pixelartexchange/artbase.server)_
 
 
-Yes, you can. Pick any readymade pixel art (by number) from any of the many collections served-up by an artbase (server edition)
+Yes, you can. Pick any readymade pixel art (by number e.g. no.1, no.4, no.5, etc.) from any of the many collections served-up by an artbase (server edition)
 installation.
 By default "out-of-the-box" the artbase web server / service installation running online
 at [pixelartexchange.herokuapp.com](https://pixelartexchange.herokuapp.com/) gets called via HTTP.
