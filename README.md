@@ -35,10 +35,11 @@ Usage: fab [options] name [attribute] ...
 
 ### Punks (24x24)
 
-_Fabricate punk character pixel art originals from text attributes (from scratch / zero) via builtin spritesheet_
+_A free (pixel) art service brought to you by [punks, (phunks, philips, marilyns, & more) generation library / gem »](https://github.com/cryptopunksnotdead/cryptopunks/tree/master/cryptopunks)_
 
 
-Let's try:
+
+Fab(ricate) punk character pixel art originals from text attributes (from scratch / zero) via built-in spritesheet. Let's try:
 
 ```
 $ fab punk alien headband
@@ -110,7 +111,7 @@ resulting in:
 
 
 
-### Phunks (24x24)
+#### Phunks (24x24)
 
 Let's try some left-looking punks also known as Phunks -  "hand-phlipped" by Philip the Intern
 
@@ -128,7 +129,7 @@ resulting in:
 
 
 
-### Philips (24x24)
+#### Philips (24x24)
 
 Let's try some left-looking philips (pre-configured phunk
 with the built-in attributes: Male 3):
@@ -150,7 +151,7 @@ resulting in:
 
 
 
-### Marilyns (24x24)
+#### Marilyns (24x24)
 
 Let's try some left-looking marilyns (pre-configured phunk
 with the built-in attributes: Female 3, Wild Blonde, Mole, Blue Eye Shadow):
@@ -190,7 +191,10 @@ resulting in:
 ![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn2.4@4x.png)
 
 
+
 ### Shiba Inu Doge (24x24)
+
+_A free (pixel) art service brought to you by [shiba-inus generation library / gem »](https://github.com/pixelartexchange/pixelart/tree/master/shibainus)_
 
 
 Let's try some shiba inu doge - much wow:
@@ -229,6 +233,8 @@ resulting in:
 
 
 ### Coolcats (24x24)
+
+_A free (pixel) art service brought to you by [coolcats generation library / gem »](https://github.com/pixelartexchange/pixelart/tree/master/coolcats)_
 
 
 Let's try some coolcats:
@@ -270,6 +276,8 @@ resulting in:
 
 
 ### Nouns (32x32)
+
+_A free (pixel) art service brought to you by [nouns generation library / gem »](https://github.com/pixelartexchange/pixelart/tree/master/nouns)_
 
 
 Let's try some noun (pixel avatars):
@@ -321,6 +329,9 @@ resulting in:
 
 ### Moonbirds / Owls (42x42)
 
+_A free (pixel) art service brought to you by [moonbirds (& owls)generation library / gem »](https://github.com/pixelartexchange/pixelart/tree/master/moonbirds)_
+
+
 
 Let's try some super-rare never-before-seen moonbirds / owls:
 
@@ -357,7 +368,6 @@ resulting in:
 ![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1.2@4x.png)
 ![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1.3@4x.png)
 ![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1.4@4x.png)
-
 
 
 
