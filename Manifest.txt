@@ -6,5 +6,6 @@ Rakefile
 bin/fab
 bin/fabricate
 lib/originals.rb
+lib/originals/service.rb
 lib/originals/tool.rb
 lib/originals/version.rb

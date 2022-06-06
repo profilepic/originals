@@ -380,17 +380,17 @@ And so on. Stay tuned for more original artwork series!
 
 ### Bonus: Readymades - Start w/ (Pixel) Art From (Online) Collections
 
-_A free readymade (pixel) art service brought to you by the [artbase "(server edition) »](https://github.com/pixelartexchange/artbase.server)_
+_A free readymade (pixel) art service brought to you by the [artbase (server edition) »](https://github.com/pixelartexchange/artbase.server)_
 
 
 Yes, you can. Pick any readymade pixel art (by number) from any of the many collections served-up by an artbase (server edition)
 installation.
 By default "out-of-the-box" the artbase web server / service installation running online
-at [**pixelartexchange.herokuapp.com »**](https://pixelartexchange.herokuapp.com/) gets called via HTTP.
+at [pixelartexchange.herokuapp.com](https://pixelartexchange.herokuapp.com/) gets called via HTTP.
 
 
 
-####  1000 More Punks (24x24)
+#### More Punks (24x24)
 
 Let's try some more punks:
 
@@ -435,6 +435,31 @@ resulting in:
 ![](https://github.com/pixelartexchange/originals/raw/master/i/punkrock1@4x.png)
 ![](https://github.com/pixelartexchange/originals/raw/master/i/punkrock4@4x.png)
 ![](https://github.com/pixelartexchange/originals/raw/master/i/punkrock5@4x.png)
+
+
+
+####  Dooggies (32x32)
+
+Let's try some dooggies:
+
+```
+$ fab dooggie no.0
+$ fab dooggie no.571
+$ fab dooggie no.7411
+```
+
+resulting in:
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/dooggie0.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/dooggie571.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/dooggie7411.png)
+
+4x  (using the `--zoom=4`/`-z4` option)
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/dooggie0@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/dooggie571@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/dooggie7411@4x.png)
+
 
 
 And so on.
