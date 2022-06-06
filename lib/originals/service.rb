@@ -23,9 +23,28 @@ module Artbase
 
   ## todo/fix: move name variants into artbase server itelf - why? why not?
   COLLECTIONS = {
-      'punk'      => 'punks',
-      'morepunk'  => 'morepunks',
+      'punk'            => 'punks',
+      'morepunk'        => 'morepunks',
+      'readymadepunk'   => 'readymadepunks',
+      'bwpunk'          => 'bwpunks',
+      'frontpunk'       => 'frontpunks',
+      'intlpunk'        => 'intlpunks',
+      'boredape'        => 'boredapes',
+      'ape'             => 'apes',
+      'basicboredape'   => 'basicboredapes',
+      'coolcat'         => 'coolcats',
+      'dooggie'         => 'dooggies',
+      'mooncat'         => 'mooncatrescue',
+      'moonbear'        => 'moonbears',
+      'moonbird'        => 'moonbirds',
+      'starbird'        => 'starbirds',
+      'moonbirdpunk'    => 'moonbirdpunks',
+      '8bit'            => '8bits',
+      'gopher'          => 'gophers',
+      'rock'            => 'rocks',
+      'punkrock'        => 'punkrocks',
     }
+
 
   ###################
   #  main artbase service handler / machinery
