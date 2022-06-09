@@ -486,7 +486,7 @@ For more see the
 
 Yes, you can use multiple backgrounds and stack one background onto another. (Note: This only works for "semi-transparent" backgrounds such as
 Rainbow 1 ![](i/background-rainbow1-24x24.png),
-Rainbow 2 ![](i/background-rainbow1-24x24.png), etc.) Example:
+Rainbow 2 ![](i/background-rainbow2-24x24.png), etc.) Example:
 
 
 ```
