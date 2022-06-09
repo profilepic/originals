@@ -35,6 +35,33 @@ ids.each do |id|
 end
 =end
 
+
+base = Artbase::Image.get( 'punks', 1 ).mirror
+
+base.save( "./tmp2/phunk1.png" )
+base.zoom(4).save( "./tmp2/phunk1@4x.png" )
+base.zoom(8).save( "./tmp2/phunk1@8x.png" )
+
+phunk = base.background( '#638596', 'Rainbow 1' )
+phunk.save( "./tmp2/phunk1a.png" )
+phunk.zoom(4).save( "./tmp2/phunk1a@4x.png" )
+phunk.zoom(8).save( "./tmp2/phunk1a@8x.png" )
+
+phunk = base.background( 'Matrix 1', 'Rainbow 2' )
+phunk.save( "./tmp2/phunk1b.png" )
+phunk.zoom(4).save( "./tmp2/phunk1b@4x.png" )
+phunk.zoom(8).save( "./tmp2/phunk1b@8x.png" )
+
+phunk = base.background( 'Ukraine', 'Rainbow 2' )
+phunk.save( "./tmp2/phunk1c.png" )
+phunk.zoom(4).save( "./tmp2/phunk1c@4x.png" )
+phunk.zoom(8).save( "./tmp2/phunk1c@8x.png" )
+
+
+__END__
+
+
+
 ids = [0, 571, 7411]
 ids.each do |id|
   sleep( delay_in_secs )

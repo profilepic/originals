@@ -491,21 +491,32 @@ Rainbow 2 ![](i/background-rainbow1-24x24.png), etc.) Example:
 
 ```
 $ fab marilyn flowers earring smile --background=0x638596+rainbow1
-$ fab marilyn flowers earring smile --background=ukraine+rainbow2
 $ fab marilyn flowers earring smile --background=matrix1+rainbow2
+$ fab marilyn flowers earring smile --background=ukraine+rainbow2
+
+$ fab phunk no.1 --background=0x638596+rainbow1
+$ fab phunk no.1 --background=matrix1+rainbow2
+$ fab phunk no.1 --background=ukraine+rainbow2
 ```
 
 resulting in:
 
 ![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3a.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3c.png)
 ![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3b.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3c.png),
+![](https://github.com/pixelartexchange/originals/raw/master/i/phunk1a.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/phunk1b.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/phunk1c.png)
+
 
 4x  (using the `--zoom=4`/`-z4` option)
 
 ![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3a@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3c@4x.png)
 ![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3b@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3c@4x.png),
+![](https://github.com/pixelartexchange/originals/raw/master/i/phunk1a@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/phunk1b@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/phunk1c@4x.png)
 
 
 
