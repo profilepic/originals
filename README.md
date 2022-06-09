@@ -35,13 +35,15 @@ Usage: fab [options] name [attribute attribute ...]
 
 
 
-### Punks (24x24)
+### Punks, Phunks, Philips, Marilyns & More (24x24)
 
 _A free (pixel) art service brought to you by the [punks, (phunks, philips, marilyns, & more) generation library / gem »](https://github.com/cryptopunksnotdead/cryptopunks/tree/master/cryptopunks)_
 
 
 
-Fab(ricate) punk character pixel art originals from text attributes (from scratch / zero) via built-in spritesheet. Let's try:
+#### Punks  (24x24)
+
+Fab(ricate) some (right-looking) punk character pixel art originals from text attributes (from scratch / zero) via built-in spritesheet. Let's try:
 
 ```
 $ fab punk alien headband
@@ -463,6 +465,47 @@ resulting in:
 
 
 And so on.
+
+
+
+
+### Appendix: More Tips & Tricks
+
+####   Built-In Background Patterns & Images
+
+Yes, you can use built-in background patterns & images -
+classics include
+Ukraine ![](i/background-ukraine-24x24.png),
+Pride / Rainbow ![](i/background-rainbow-24x24.png).
+For more see the
+[backgrounds generation library / gem »](https://github.com/pixelartexchange/pixelart/tree/master/backgrounds)
+
+
+
+####   Multiple "Stacked" Backgrounds
+
+Yes, you can use multiple backgrounds and stack one background onto another. (Note: This only works for "semi-transparent" backgrounds such as
+Rainbow 1 ![](i/background-rainbow1-24x24.png),
+Rainbow 2 ![](i/background-rainbow1-24x24.png), etc.) Example:
+
+
+```
+$ fab marilyn flowers earring smile --background=0x638596+rainbow1
+$ fab marilyn flowers earring smile --background=ukraine+rainbow2
+$ fab marilyn flowers earring smile --background=matrix1+rainbow2
+```
+
+resulting in:
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3a.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3c.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3b.png)
+
+4x  (using the `--zoom=4`/`-z4` option)
+
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3a@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3c@4x.png)
+![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3b@4x.png)
 
 
 

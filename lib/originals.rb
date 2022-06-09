@@ -1,4 +1,6 @@
 ## 3rd party libs
+require 'backgrounds'
+
 require 'cryptopunks'
 require 'shibainus'
 require 'moonbirds'
@@ -64,7 +66,16 @@ def self.fabricate( name, *attributes, background: nil )
          end
 
    ## note: keep add background as a separate (last) step for now - why? why not?
-   img = Originals.factory._background( img, background )   if background
+   ##       note: support multiple backgrounds via array
+   ##                      e.g. ['matrix1', 'rainbow2']
+   if background
+     img = if background.is_a?( Array )
+                 img.background( *background )
+           else
+                 img.background( background )
+           end
+   end
+
    img
 end
 class << self
@@ -145,29 +156,12 @@ end
 ###
 #   helpers
 
-def _background( base, background )
-    width, height = base.width, base.height
-
-    img = if background.is_a?( String ) && ['ua', 'ukraine'].include?( background.downcase )
-              Image.new( width, height ).ukraine
-          elsif background.is_a?( String ) && ['rainbow', 'pride'].include?( background.downcase )
-              Image.new( width, height ).pride
-          else
-            Image.new( width, width, background )
-          end
-
-    img2 = Image.new( width, width )
-    img2.compose!( img )
-    img2.compose!( base )
-    img2
-end
-
 def _norm_name( str )
    str.downcase.gsub( /[ ()_-]/, '' )
 end
 
 def _parse_id( str )
-  if str.gsub( /[ #()._-]/, '' ) =~ /
+  if str.gsub( /[ #()№º._-]/, '' ) =~ /
                     ^(no|n|id)?
                     (?<id>[0-9]+)$
                      /ix

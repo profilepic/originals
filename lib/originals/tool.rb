@@ -70,8 +70,29 @@ class Tool
     img =   if attributes.size == 1 && id=Originals.factory._parse_id( attributes[0] )
                 ## check for known collection names
                 ## (mostly singular to plural)  - keep? why? why not?
-                collection = Artbase::COLLECTIONS[ key ] || key
-                Artbase::Image.get( collection, id )
+
+                ## add support for "virtual" phunks  - move "upstream" to artbase - why? why not?
+                if ['phunk', 'phunks'].include?( key )
+                  Artbase::Image.get( 'punks', id ).mirror
+                elsif ['morephunk', 'morephunks'].include?( key )
+                  Artbase::Image.get( 'morepunks', id ).mirror
+                elsif ['bwphunk', 'bwphunks'].include?( key )
+                  Artbase::Image.get( 'bwpunks', id ).mirror
+                elsif ['readymadephunk', 'readymadephunks'].include?( key )
+                  Artbase::Image.get( 'readymadepunks', id ).mirror
+                elsif ['intlphunk', 'intlphunks'].include?( key )
+                  Artbase::Image.get( 'intlpunks', id ).mirror
+                elsif ['phoonbird', 'phoonbirds',
+                       'moonbhird', 'moonbhirds',
+                       'bhird', 'bhirds'].include?( key )
+                  Artbase::Image.get( 'moonbirds', id ).mirror
+                elsif ['moonbirdphunk', 'moonbirdphunks',
+                       'birdphunk', 'birdphunks'].include?( key )
+                  Artbase::Image.get( 'moonbirdpunks', id ).mirror
+                else
+                  collection = Artbase::COLLECTIONS[ key ] || key
+                  Artbase::Image.get( collection, id )
+                end
              else
                 Original::Image.fabricate( key, *attributes )
              end
@@ -89,9 +110,16 @@ class Tool
        ##         keep? why? why not?
        img = img.transparent    if id
 
-      img = Original.factory._background( img,
-                                          options[ :background ] )
+       ## note: support multiple backgrounds
+       ##       via + for now e.g.
+       ##         blue+rainbow1
+       ##   add more separators - why? why not?
+       backgrounds = options[ :background].split( '+' )
+       backgrounds = backgrounds.map {|background| background.strip }
+
+       img = img.background( *backgrounds )
     end
+
 
     basename = String.new('')   ## note: start with our own string buffer
                                 ##    otherwise assigned first string gets modified!!

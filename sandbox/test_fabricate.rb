@@ -51,7 +51,12 @@ org = Original::Image.fabricate( 'Marilyn', *attributes )
 org.save( "./tmp/marilyn2.png" )
 org.zoom(4).save( "./tmp/marilyn2@4x.png" )
 
-backgrounds = ['#638596', '#ffbf00', 'Ukraine', 'Pride']
+backgrounds = ['#638596',
+               '#ffbf00',
+               'Ukraine',
+               'Pride',
+               ['Ukraine', 'Rainbow 1'],
+               ['Matrix 1', 'Rainbow 2']]
 backgrounds.each_with_index do |background,i|
   org = Original::Image.fabricate( 'Marilyn', *attributes, background: background )
   org.save( "./tmp/marilyn2.#{i+1}.png" )
@@ -59,9 +64,29 @@ backgrounds.each_with_index do |background,i|
   org.zoom(8).save( "./tmp/marilyn2.#{i+1}@8x.png" )
 end
 
-org = Original::Image.fabricate( 'Marilyn', 'Flowers', 'Earring', 'Smile' )
+attributes = ['Flowers', 'Earring', 'Smile']
+org = Original::Image.fabricate( 'Marilyn', *attributes )
 org.save( "./tmp/marilyn3.png" )
 org.zoom(4).save( "./tmp/marilyn3@4x.png" )
+
+
+# --- try multi backgrounds
+org = Original::Image.fabricate( 'Marilyn', *attributes, background: ['#638596', 'Rainbow 1'] )
+org.save( "./tmp/marilyn3a.png" )
+org.zoom(4).save( "./tmp/marilyn3a@4x.png" )
+org.zoom(8).save( "./tmp/marilyn3a@8x.png" )
+
+org = Original::Image.fabricate( 'Marilyn', *attributes, background: ['Matrix 1', 'Rainbow 2'] )
+org.save( "./tmp/marilyn3b.png" )
+org.zoom(4).save( "./tmp/marilyn3b@4x.png" )
+org.zoom(8).save( "./tmp/marilyn3b@8x.png" )
+
+org = Original::Image.fabricate( 'Marilyn', *attributes, background: ['Ukraine', 'Rainbow 2'] )
+org.save( "./tmp/marilyn3c.png" )
+org.zoom(4).save( "./tmp/marilyn3c@4x.png" )
+org.zoom(8).save( "./tmp/marilyn3c@8x.png" )
+
+
 
 
 ####

@@ -26,6 +26,7 @@ Hoe.spec 'originals' do
   self.history_file = 'CHANGELOG.md'
 
   self.extra_deps = [
+    ['backgrounds'],
     ['cryptopunks'],
     ['shibainus'],
     ['moonbirds'],
