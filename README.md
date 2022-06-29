@@ -3,8 +3,8 @@
 Do-it-yourself (DIY) - yes, you can! - fab(criate) your own unique (pixel) artworks w/ text attributes (via built-in spritesheets) incl. 2x/4x/8x zoom for bigger sizes and more
 
 
-* home  :: [github.com/pixelartexchange/originals](https://github.com/pixelartexchange/originals)
-* bugs  :: [github.com/pixelartexchange/originals/issues](https://github.com/pixelartexchange/originals/issues)
+* home  :: [github.com/profilepic/originals](https://github.com/profilepic/originals)
+* bugs  :: [github.com/profilepic/originals/issues](https://github.com/profilepic/originals/issues)
 * gem   :: [rubygems.org/gems/originals](https://rubygems.org/gems/originals)
 * rdoc  :: [rubydoc.info/gems/originals](http://rubydoc.info/gems/originals)
 
