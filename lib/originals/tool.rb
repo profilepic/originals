@@ -31,6 +31,12 @@ class Tool
           options[ :id] = str
       end
 
+      opts.on( "--require STRING", "-r", String, "Require image library / gem (default: none)") do |str|
+          ## todo/check: allow multiple requires - why? why not?
+          ##   or use comma to separate??
+          options[ :gems ] = str
+      end
+
       opts.on("-h", "--help", "Prints this help") do
         puts opts
         exit
@@ -50,13 +56,33 @@ class Tool
       exit
     end
 
+
+    if options[:gems]
+        gems = options[:gems].split(',')
+        gems.each do |gem|
+           puts "==> auto-require >#{gem}<..."
+           require gem
+        end
+    end
+
+
     name       = args[0]   ## todo/check - use collection_name/slug or such?
+
+
+    if ['ls', 'list'].include?( name )
+       ## list all known image generator(s)
+       Original.factory.list
+       exit
+    end
+
+
+
     attributes = args[1..-1]
 
 
     ## normalize name of series
     ##   e.g.   Shiba Inu  => shibainu  etc.
-    key = Originals.factory._norm_name( name )
+    key = Factory.normalize_key( name )
 
     ## check for readymade via series id
     ##    allow some "literal" variants e.g.
@@ -67,7 +93,7 @@ class Tool
 
     id = nil
 
-    img =   if attributes.size == 1 && id=Originals.factory._parse_id( attributes[0] )
+    img =   if attributes.size == 1 && id=_parse_id( attributes[0] )
                 ## check for known collection names
                 ## (mostly singular to plural)  - keep? why? why not?
 
@@ -146,6 +172,23 @@ class Tool
 
     puts "bye"
   end
+
+
+  ####
+  # helpers
+  def self._parse_id( str )
+    if str.gsub( /[ #()№º._-]/, '' ) =~ /
+                      ^(no|n|id)?
+                      (?<id>[0-9]+)$
+                       /ix
+      id = Regexp.last_match[:id].to_i(10)   ## note: add base 10 (for 008 or such)
+      id
+    else
+       nil   # retur nil if no match
+    end
+  end
+
+
 end # class Tool
 
 end # module Originals

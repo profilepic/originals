@@ -37,7 +37,7 @@ Usage: fab [options] name [attribute attribute ...]
 
 ### Punks, Phunks, Philips, Marilyns & More (24x24)
 
-_A free (pixel) art service brought to you by the [punks, (phunks, philips, marilyns, & more) generation library / gem »](https://github.com/cryptopunksnotdead/cryptopunks/tree/master/cryptopunks)_
+_A free (pixel) art service brought to you by the [punks, (phunks, philips, marilyns, & more) generation library / gem »](https://github.com/cryptopunksnotdead/cryptopunks/tree/master/punks)_
 
 
 
@@ -51,7 +51,7 @@ $ fab punk alien headband
 
 resulting in:
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/punk0.png)
+![](https://github.com/profilepic/originals/raw/master/i/punk0.png)
 
 Let's try  the `-z/--zoom` factor 2x, 4x, 8x, etc.:
 
@@ -63,7 +63,7 @@ $ fab -z4 punk alien headband
 
 resulting in:
 
-4x ![](https://github.com/pixelartexchange/originals/raw/master/i/punk0@4x.png)
+4x ![](https://github.com/profilepic/originals/raw/master/i/punk0@4x.png)
 
 
 Let's try some more:
@@ -75,13 +75,13 @@ $ fab punk demon heart_shades
 
 resulting in:
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/punk1.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/punk2.png)
+![](https://github.com/profilepic/originals/raw/master/i/punk1.png)
+![](https://github.com/profilepic/originals/raw/master/i/punk2.png)
 
 4x  (using the `--zoom=4`/`-z4` option)
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/punk1@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/punk2@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/punk1@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/punk2@4x.png)
 
 
 
@@ -101,17 +101,17 @@ $ fab --background=pride punk male3 peak_spike goat horned_rim_glasses
 
 resulting in:
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/punk1.1.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/punk1.2.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/punk1.3.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/punk1.4.png)
+![](https://github.com/profilepic/originals/raw/master/i/punk1.1.png)
+![](https://github.com/profilepic/originals/raw/master/i/punk1.2.png)
+![](https://github.com/profilepic/originals/raw/master/i/punk1.3.png)
+![](https://github.com/profilepic/originals/raw/master/i/punk1.4.png)
 
 4x  (using the `--zoom=4`/`-z4` option)
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/punk1.1@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/punk1.2@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/punk1.3@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/punk1.4@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/punk1.1@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/punk1.2@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/punk1.3@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/punk1.4@4x.png)
 
 
 
@@ -125,11 +125,11 @@ $ fab phunk male2 spots hoodie
 
 resulting in:
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/phunk0.png)
+![](https://github.com/profilepic/originals/raw/master/i/phunk0.png)
 
 4x  (using the `--zoom=4`/`-z4` option)
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/phunk0@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/phunk0@4x.png)
 
 
 
@@ -145,13 +145,13 @@ $ fab philip jester_hat smile
 
 resulting in:
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/philip0.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/philip1.png)
+![](https://github.com/profilepic/originals/raw/master/i/philip0.png)
+![](https://github.com/profilepic/originals/raw/master/i/philip1.png)
 
 4x  (using the `--zoom=4`/`-z4` option)
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/philip0@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/philip1@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/philip0@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/philip1@4x.png)
 
 
 
@@ -175,24 +175,24 @@ $ fab --background=pride marilyn hot_lipstick big_shades
 
 resulting in:
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn0.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn1.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn2.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn2.1.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn2.2.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn2.3.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn2.4.png)
+![](https://github.com/profilepic/originals/raw/master/i/marilyn0.png)
+![](https://github.com/profilepic/originals/raw/master/i/marilyn1.png)
+![](https://github.com/profilepic/originals/raw/master/i/marilyn3.png)
+![](https://github.com/profilepic/originals/raw/master/i/marilyn2.png)
+![](https://github.com/profilepic/originals/raw/master/i/marilyn2.1.png)
+![](https://github.com/profilepic/originals/raw/master/i/marilyn2.2.png)
+![](https://github.com/profilepic/originals/raw/master/i/marilyn2.3.png)
+![](https://github.com/profilepic/originals/raw/master/i/marilyn2.4.png)
 
 4x  (using the `--zoom=4`/`-z4` option)
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn0@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn1@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn2.1@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn2.2@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn2.3@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn2.4@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/marilyn0@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/marilyn1@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/marilyn3@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/marilyn2.1@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/marilyn2.2@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/marilyn2.3@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/marilyn2.4@4x.png)
 
 
 
@@ -217,21 +217,21 @@ $ fab --background=pride   doge dark tiara big_shades
 
 resulting in:
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/doge0.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/doge1.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/doge1.1.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/doge1.2.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/doge1.3.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/doge1.4.png)
+![](https://github.com/profilepic/originals/raw/master/i/doge0.png)
+![](https://github.com/profilepic/originals/raw/master/i/doge1.png)
+![](https://github.com/profilepic/originals/raw/master/i/doge1.1.png)
+![](https://github.com/profilepic/originals/raw/master/i/doge1.2.png)
+![](https://github.com/profilepic/originals/raw/master/i/doge1.3.png)
+![](https://github.com/profilepic/originals/raw/master/i/doge1.4.png)
 
 4x  (using the `--zoom=4`/`-z4` option)
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/doge0@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/doge1@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/doge1.1@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/doge1.2@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/doge1.3@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/doge1.4@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/doge0@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/doge1@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/doge1.1@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/doge1.2@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/doge1.3@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/doge1.4@4x.png)
 
 
 
@@ -258,23 +258,23 @@ $ fab --background=pride   coolcat tv_head_grey tv_face_no_signal
 
 resulting in:
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat0.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat1.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat2.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat2.1.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat2.2.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat2.3.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat2.4.png)
+![](https://github.com/profilepic/originals/raw/master/i/coolcat0.png)
+![](https://github.com/profilepic/originals/raw/master/i/coolcat1.png)
+![](https://github.com/profilepic/originals/raw/master/i/coolcat2.png)
+![](https://github.com/profilepic/originals/raw/master/i/coolcat2.1.png)
+![](https://github.com/profilepic/originals/raw/master/i/coolcat2.2.png)
+![](https://github.com/profilepic/originals/raw/master/i/coolcat2.3.png)
+![](https://github.com/profilepic/originals/raw/master/i/coolcat2.4.png)
 
 4x  (using the `--zoom=4`/`-z4` option)
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat0@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat1@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat2@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat2.1@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat2.2@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat2.3@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/coolcat2.4@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/coolcat0@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/coolcat1@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/coolcat2@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/coolcat2.1@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/coolcat2.2@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/coolcat2.3@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/coolcat2.4@4x.png)
 
 
 
@@ -308,23 +308,23 @@ $ fab --background=pride   noun body_red txt_lol \
 
 resulting in:
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/noun0.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/noun1.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/noun2.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/noun2.1.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/noun2.2.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/noun2.3.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/noun2.4.png)
+![](https://github.com/profilepic/originals/raw/master/i/noun0.png)
+![](https://github.com/profilepic/originals/raw/master/i/noun1.png)
+![](https://github.com/profilepic/originals/raw/master/i/noun2.png)
+![](https://github.com/profilepic/originals/raw/master/i/noun2.1.png)
+![](https://github.com/profilepic/originals/raw/master/i/noun2.2.png)
+![](https://github.com/profilepic/originals/raw/master/i/noun2.3.png)
+![](https://github.com/profilepic/originals/raw/master/i/noun2.4.png)
 
 4x  (using the `--zoom=4`/`-z4` option)
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/noun0@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/noun1@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/noun2@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/noun2.1@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/noun2.2@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/noun2.3@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/noun2.4@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/noun0@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/noun1@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/noun2@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/noun2.1@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/noun2.2@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/noun2.3@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/noun2.4@4x.png)
 
 
 
@@ -357,21 +357,21 @@ $ fab --background=pride   moonbird tabby_brown beak_small_orange eyes_open_whit
 
 resulting in:
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird0.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1.1.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1.2.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1.3.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1.4.png)
+![](https://github.com/profilepic/originals/raw/master/i/moonbird0.png)
+![](https://github.com/profilepic/originals/raw/master/i/moonbird1.png)
+![](https://github.com/profilepic/originals/raw/master/i/moonbird1.1.png)
+![](https://github.com/profilepic/originals/raw/master/i/moonbird1.2.png)
+![](https://github.com/profilepic/originals/raw/master/i/moonbird1.3.png)
+![](https://github.com/profilepic/originals/raw/master/i/moonbird1.4.png)
 
 4x  (using the `--zoom=4`/`-z4` option)
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird0@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1.1@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1.2@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1.3@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/moonbird1.4@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/moonbird0@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/moonbird1@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/moonbird1.1@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/moonbird1.2@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/moonbird1.3@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/moonbird1.4@4x.png)
 
 
 
@@ -404,15 +404,15 @@ $ fab morepunk no.190
 
 resulting in:
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/morepunk179.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/morepunk180.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/morepunk190.png)
+![](https://github.com/profilepic/originals/raw/master/i/morepunk179.png)
+![](https://github.com/profilepic/originals/raw/master/i/morepunk180.png)
+![](https://github.com/profilepic/originals/raw/master/i/morepunk190.png)
 
 4x  (using the `--zoom=4`/`-z4` option)
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/morepunk179@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/morepunk180@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/morepunk190@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/morepunk179@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/morepunk180@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/morepunk190@4x.png)
 
 
 
@@ -428,15 +428,15 @@ $ fab punkrock no.5
 
 resulting in:
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/punkrock1.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/punkrock4.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/punkrock5.png)
+![](https://github.com/profilepic/originals/raw/master/i/punkrock1.png)
+![](https://github.com/profilepic/originals/raw/master/i/punkrock4.png)
+![](https://github.com/profilepic/originals/raw/master/i/punkrock5.png)
 
 4x  (using the `--zoom=4`/`-z4` option)
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/punkrock1@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/punkrock4@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/punkrock5@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/punkrock1@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/punkrock4@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/punkrock5@4x.png)
 
 
 
@@ -452,15 +452,15 @@ $ fab dooggie no.7411
 
 resulting in:
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/dooggie0.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/dooggie571.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/dooggie7411.png)
+![](https://github.com/profilepic/originals/raw/master/i/dooggie0.png)
+![](https://github.com/profilepic/originals/raw/master/i/dooggie571.png)
+![](https://github.com/profilepic/originals/raw/master/i/dooggie7411.png)
 
 4x  (using the `--zoom=4`/`-z4` option)
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/dooggie0@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/dooggie571@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/dooggie7411@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/dooggie0@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/dooggie571@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/dooggie7411@4x.png)
 
 
 
@@ -501,22 +501,22 @@ $ fab phunk no.1 --background=ukraine+rainbow2
 
 resulting in:
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3a.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3b.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3c.png),
-![](https://github.com/pixelartexchange/originals/raw/master/i/phunk1a.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/phunk1b.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/phunk1c.png)
+![](https://github.com/profilepic/originals/raw/master/i/marilyn3a.png)
+![](https://github.com/profilepic/originals/raw/master/i/marilyn3b.png)
+![](https://github.com/profilepic/originals/raw/master/i/marilyn3c.png),
+![](https://github.com/profilepic/originals/raw/master/i/phunk1a.png)
+![](https://github.com/profilepic/originals/raw/master/i/phunk1b.png)
+![](https://github.com/profilepic/originals/raw/master/i/phunk1c.png)
 
 
 4x  (using the `--zoom=4`/`-z4` option)
 
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3a@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3b@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/marilyn3c@4x.png),
-![](https://github.com/pixelartexchange/originals/raw/master/i/phunk1a@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/phunk1b@4x.png)
-![](https://github.com/pixelartexchange/originals/raw/master/i/phunk1c@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/marilyn3a@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/marilyn3b@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/marilyn3c@4x.png),
+![](https://github.com/profilepic/originals/raw/master/i/phunk1a@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/phunk1b@4x.png)
+![](https://github.com/profilepic/originals/raw/master/i/phunk1c@4x.png)
 
 
 

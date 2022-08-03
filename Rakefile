@@ -16,7 +16,7 @@ Hoe.spec 'originals' do
   self.summary = "originals - do-it-yourself (DIY) -  yes, you can! - Factory of Modern Originals (FoMO) - fab(criate) your own unique (pixel) artworks w/ text attributes (via built-in spritesheets) incl. 2x/4x/8x zoom for bigger sizes and more"
   self.description = summary
 
-  self.urls    = { home: 'https://github.com/pixelartexchange/originals' }
+  self.urls    = { home: 'https://github.com/profilepic/originals' }
 
   self.author  = 'Gerald Bauer'
   self.email   = 'wwwmake@googlegroups.com'
@@ -27,11 +27,11 @@ Hoe.spec 'originals' do
 
   self.extra_deps = [
     ['backgrounds'],
-    ['cryptopunks'],
-    ['shibainus'],
-    ['moonbirds'],
-    ['coolcats'],
-    ['nouns'],
+    ['punks',     '>= 0.5.2'],
+    ['shibainus', '>= 0.1.1'],
+    ['moonbirds', '>= 1.1.1'],
+    ['coolcats',  '>= 0.1.1'],
+    ['nouns',     '>= 0.1.1'],
     ['webclient'],
   ]
 
