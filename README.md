@@ -198,7 +198,7 @@ resulting in:
 
 ### Shiba Inu Doge (24x24)
 
-_A free (pixel) art service brought to you by the [shiba-inus generation library / gem »](https://github.com/pixelartexchange/pixelart/tree/master/shibainus)_
+_A free (pixel) art service brought to you by the [shiba-inus generation library / gem »](https://github.com/profilepic/text-to-image/tree/master/shibainus)_
 
 
 Let's try some shiba inu doge - much wow:
@@ -238,7 +238,7 @@ resulting in:
 
 ### Coolcats (24x24)
 
-_A free (pixel) art service brought to you by the [coolcats generation library / gem »](https://github.com/pixelartexchange/pixelart/tree/master/coolcats)_
+_A free (pixel) art service brought to you by the [coolcats generation library / gem »](https://github.com/profilepic/text-to-image/tree/master/coolcats)_
 
 
 Let's try some coolcats:
@@ -281,7 +281,7 @@ resulting in:
 
 ### Nouns (32x32)
 
-_A free (pixel) art service brought to you by the [nouns generation library / gem »](https://github.com/pixelartexchange/pixelart/tree/master/nouns)_
+_A free (pixel) art service brought to you by the [nouns generation library / gem »](https://github.com/profilepic/text-to-image/tree/master/nouns)_
 
 
 Let's try some noun (pixel avatars):
@@ -333,7 +333,7 @@ resulting in:
 
 ### Moonbirds / Owls (42x42)
 
-_A free (pixel) art service brought to you by the [moonbirds (& owls)generation library / gem »](https://github.com/pixelartexchange/pixelart/tree/master/moonbirds)_
+_A free (pixel) art service brought to you by the [moonbirds (& owls)generation library / gem »](https://github.com/profilepic/text-to-image/tree/master/moonbirds)_
 
 
 
@@ -478,7 +478,7 @@ classics include
 Ukraine ![](i/background-ukraine-24x24.png),
 Pride / Rainbow ![](i/background-rainbow-24x24.png).
 For more see the
-[backgrounds generation library / gem »](https://github.com/pixelartexchange/pixelart/tree/master/backgrounds)
+[backgrounds generation library / gem »](https://github.com/profilepic/text-to-image/tree/master/backgrounds)
 
 
 

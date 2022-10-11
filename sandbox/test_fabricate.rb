@@ -17,9 +17,10 @@ org = Original::Image.fabricate( 'Punk', *attributes )
 org.save( "./tmp/punk1.png" )
 org.zoom(4).save( "./tmp/punk1@4x.png" )
 
+
 backgrounds = ['#638596', '#ffbf00', 'Ukraine', 'Pride']
 backgrounds.each_with_index do |background,i|
-  org = Original::Image.fabricate( 'Punk', *attributes, background: background )
+  org = Original::Image.fabricate( 'Punk', *attributes ).background( background )
   org.save( "./tmp/punk1.#{i+1}.png" )
   org.zoom(4).save( "./tmp/punk1.#{i+1}@4x.png" )
 end
@@ -58,7 +59,7 @@ backgrounds = ['#638596',
                ['Ukraine', 'Rainbow 1'],
                ['Matrix 1', 'Rainbow 2']]
 backgrounds.each_with_index do |background,i|
-  org = Original::Image.fabricate( 'Marilyn', *attributes, background: background )
+  org = Original::Image.fabricate( 'Marilyn', *attributes ).background( *background )
   org.save( "./tmp/marilyn2.#{i+1}.png" )
   org.zoom(4).save( "./tmp/marilyn2.#{i+1}@4x.png" )
   org.zoom(8).save( "./tmp/marilyn2.#{i+1}@8x.png" )
@@ -71,17 +72,17 @@ org.zoom(4).save( "./tmp/marilyn3@4x.png" )
 
 
 # --- try multi backgrounds
-org = Original::Image.fabricate( 'Marilyn', *attributes, background: ['#638596', 'Rainbow 1'] )
+org = Original::Image.fabricate( 'Marilyn', *attributes ).background( '#638596', 'Rainbow 1' )
 org.save( "./tmp/marilyn3a.png" )
 org.zoom(4).save( "./tmp/marilyn3a@4x.png" )
 org.zoom(8).save( "./tmp/marilyn3a@8x.png" )
 
-org = Original::Image.fabricate( 'Marilyn', *attributes, background: ['Matrix 1', 'Rainbow 2'] )
+org = Original::Image.fabricate( 'Marilyn', *attributes ).background( 'Matrix 1', 'Rainbow 2' )
 org.save( "./tmp/marilyn3b.png" )
 org.zoom(4).save( "./tmp/marilyn3b@4x.png" )
 org.zoom(8).save( "./tmp/marilyn3b@8x.png" )
 
-org = Original::Image.fabricate( 'Marilyn', *attributes, background: ['Ukraine', 'Rainbow 2'] )
+org = Original::Image.fabricate( 'Marilyn', *attributes ).background( 'Ukraine', 'Rainbow 2' )
 org.save( "./tmp/marilyn3c.png" )
 org.zoom(4).save( "./tmp/marilyn3c@4x.png" )
 org.zoom(8).save( "./tmp/marilyn3c@8x.png" )
@@ -114,7 +115,7 @@ org.zoom(4).save( "./tmp/doge1@4x.png" )
 
 backgrounds = ['#638596', '#ffbf00', 'Ukraine', 'Pride']
 backgrounds.each_with_index do |background,i|
-  org = Original::Image.fabricate( 'Doge', *attributes, background: background )
+  org = Original::Image.fabricate( 'Doge', *attributes ).background( background )
   org.save( "./tmp/doge1.#{i+1}.png")
   org.zoom(4).save( "./tmp/doge1.#{i+1}@4x.png" )
 end
@@ -139,7 +140,7 @@ org.zoom(4).save( "./tmp/coolcat2@4x.png" )
 
 backgrounds = ['#638596', '#ffbf00', 'Ukraine', 'Pride']
 backgrounds.each_with_index do |background,i|
-  org = Original::Image.fabricate( 'Coolcat', *attributes, background: background )
+  org = Original::Image.fabricate( 'Coolcat', *attributes ).background( background )
   org.save( "./tmp/coolcat2.#{i+1}.png")
   org.zoom(4).save( "./tmp/coolcat2.#{i+1}@4x.png" )
   org.zoom(8).save( "./tmp/coolcat2.#{i+1}@8x.png" )
@@ -175,7 +176,7 @@ org.zoom(4).save( "./tmp/noun2@4x.png" )
 
 backgrounds = ['#638596', '#ffbf00', 'Ukraine', 'Pride']
 backgrounds.each_with_index do |background,i|
-  org = Original::Image.fabricate( 'Noun', *attributes, background: background )
+  org = Original::Image.fabricate( 'Noun', *attributes ).background( background )
   org.save( "./tmp/noun2.#{i+1}.png")
   org.zoom(4).save( "./tmp/noun2.#{i+1}@4x.png" )
   org.zoom(8).save( "./tmp/noun2.#{i+1}@8x.png" )
@@ -185,15 +186,15 @@ end
 ####
 #   Moonbirds / (Pixel) Owls (42x42) Series
 org = Original::Image.fabricate( 'Bird', 'Crescent Golden',
-                                         'Beak Small Golden',
-                                         'Eyes Open Golden',
+                                         'Small Golden',
+                                         'Open Golden',
                                          'Beanie' )
 org.save( "./tmp/moonbird0.png" )
 org.zoom(4).save( "./tmp/moonbird0@4x.png" )
 
 attributes = ["Tabby Brown",
-              "Beak Small Orange",
-              "Eyes Open White",
+              "Small Orange",
+              "Open White",
               "McDonald's Red",
               "Drive-Thru On Duty",
               "McDonald's Shirt (Old Skool)"]
@@ -203,7 +204,7 @@ org.zoom(4).save( "./tmp/moonbird1@4x.png" )
 
 backgrounds = ['#638596', '#ffbf00', 'Ukraine', 'Pride']
 backgrounds.each_with_index do |background,i|
-  org = Original::Image.fabricate( 'Bird', *attributes, background: background )
+  org = Original::Image.fabricate( 'Bird', *attributes ).background( background )
   org.save( "./tmp/moonbird1.#{i+1}.png")
   org.zoom(4).save( "./tmp/moonbird1.#{i+1}@4x.png" )
   org.zoom(8).save( "./tmp/moonbird1.#{i+1}@8x.png" )

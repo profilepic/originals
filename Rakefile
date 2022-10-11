@@ -28,12 +28,18 @@ Hoe.spec 'originals' do
   self.extra_deps = [
     ['backgrounds'],
     ['punks',     '>= 0.5.2'],
+    ['readymades', '>= 1.0.1'],
     ['shibainus', '>= 0.1.1'],
     ['moonbirds', '>= 1.1.1'],
     ['coolcats',  '>= 0.1.1'],
     ['nouns',     '>= 0.1.1'],
+    ['belles',     '>= 1.0.0'],
+    ['cyberpunks', '>= 1.0.0'],
+    ['goblins', '>= 1.0.0'],
+    ['smileys', '>= 0.1.0'],
     ['webclient'],
   ]
+
 
   self.licenses = ['Public Domain']
 

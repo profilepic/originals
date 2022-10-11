@@ -2,16 +2,22 @@
 require 'backgrounds'
 
 require 'punks'
+require 'readymades'
+
 require 'shibainus'
 require 'moonbirds'
 require 'coolcats'
 require 'nouns'
+require 'belles'
+require 'cyberpunks'
+require 'goblins'
+require 'smileys'
 
 require 'webclient'
 
 
 ## our own code
-require 'originals/version'    # note: let version always go first
+require_relative 'originals/version'    # note: let version always go first
 
 
 
